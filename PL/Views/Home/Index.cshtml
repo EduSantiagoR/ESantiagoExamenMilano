@@ -1,0 +1,16 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenido</h1>
+    <div>
+        <label id="txtTienda" class="text-center"></label><br />
+        <label id="txtUsuario" class="text-center"></label>
+    </div><br /><br />
+    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+</div>
+<script type="text/javascript">
+    document.getElementById('txtTienda').innerHTML = sessionStorage.getItem('Tienda');
+    document.getElementById('txtUsuario').innerHTML = sessionStorage.getItem('Empleado');
+</script>
